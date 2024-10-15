@@ -49,8 +49,13 @@ defmodule ServerProgrammingElixir.EchoServer do
 
   defp handle_connection(socket) do
     case recv_until_closed(socket, _buffer = "", _buffered_size = 0) do
-      {:ok, data} -> :gen_tcp.send(socket, data)
-      {:error, reason} -> Logger.error("Failed to receive data: #{inspect(reason)}")
+      {:ok, data} ->
+
+        Logger.info("Failed to receive data: #{inspect(data)}")
+        :gen_tcp.send(socket, data)
+
+      {:error, reason} ->
+        Logger.error("Failed to receive data: #{inspect(reason)}")
     end
 
     :gen_tcp.close(socket)
