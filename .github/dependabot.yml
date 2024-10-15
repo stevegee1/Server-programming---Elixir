@@ -16,7 +16,7 @@ updates:
    
    # testing
   - package-ecosystem: "npm" 
-    directory: "../testing" 
+    directory: "/testing/" 
     schedule:
       interval: "weekly" 
     open-pull-requests-limit: 10 
