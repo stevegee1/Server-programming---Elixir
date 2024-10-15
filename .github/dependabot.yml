@@ -1,7 +1,7 @@
 version: 2
 updates:
   # Elixir dependencies
-  - package-ecosystem: "mix" 
+  - package-ecosystem: "npm" 
     directory: "/assets" 
     schedule:
       interval: "weekly" 
