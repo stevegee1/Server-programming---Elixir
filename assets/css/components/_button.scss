@@ -1,0 +1,61 @@
+/* Default Button Class */
+.default-btn {
+  @apply inline-flex items-center gap-x-2 font-semibold shadow-sm focus:outline-none
+}
+
+/* Button Background */
+.btn-solid-primary {
+  @apply bg-indigo-600 text-white hover:bg-indigo-500
+}
+.btn-solid-secondary{
+  @apply text-gray-900 bg-white border border-gray-200 hover:bg-gray-100
+}
+
+/* Soft Button */
+.btn-soft-primary {
+  @apply bg-indigo-50 text-indigo-600 hover:bg-indigo-100
+}
+
+/* Button Size */
+.btn-xs {
+  @apply px-2 py-1 text-xs
+}
+.btn-sm {
+  @apply px-2 py-1 text-sm
+}
+.btn-md {
+  @apply px-3 py-2 text-sm
+}
+.btn-lg {
+  @apply px-3 py-2 text-sm
+}
+.btn-xl {
+  @apply px-4 py-3 text-sm
+}
+
+/* Default Icon Class */
+.default-icon {
+  @apply rounded-full focus-visible:outline-indigo-600
+}
+
+/* Icon Size */
+.icon-sm {
+  @apply p-1
+}
+.icon-md {
+  @apply p-2
+}
+.icon-lg {
+  @apply p-2
+}
+
+/* Border Size */
+.border-rounded {
+  @apply rounded
+}
+.border-md {
+  @apply rounded-md
+}
+.border-full {
+  @apply rounded-full
+}

@@ -1,0 +1,57 @@
+.badge {
+  @apply inline-flex items-center rounded-full ring-1 ring-inset px-2 py-1 text-xs ring-gray-500/10 font-medium;
+}
+
+.badge__gray,
+.badge__abstain,
+.badge__draft,
+.badge__proposal,
+.badge__countdown {
+  @apply bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600;
+}
+
+.badge__red,
+.badge__no,
+.badge__inactive,
+.badge__failed,
+.badge__rejected {
+  @apply bg-red-50 px-2 py-1 text-xs font-medium text-red-700;
+}
+
+.badge__yellow,
+.badge__approved,
+.badge__voting {
+  @apply bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800;
+}
+
+.badge__green,
+.badge__yes,
+.badge__active,
+.badge__success,
+.badge__received,
+.badge__passed {
+  @apply bg-green-50 px-2 py-1 text-xs font-medium text-green-700;
+}
+
+.badge__blue,
+.badge__sent,
+.badge__protocol,
+.badge__referendum {
+  @apply bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700;
+}
+
+.badge__type,
+.badge__indigo,
+.badge__approval {
+  @apply bg-indigo-50 px-2 py-1 text-xs font-medium text-indigo-700;
+}
+
+.badge__purple,
+.badge__execution {
+  @apply bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700;
+}
+
+.badge__pink,
+.badge__past {
+  @apply bg-pink-50 px-2 py-1 text-xs font-medium text-pink-700;
+}

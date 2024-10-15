@@ -1,0 +1,55 @@
+.bordered__card {
+  @apply border-l-8;
+}
+
+.border__intra_chain {
+  @apply border-l-orange-500;
+}
+
+.border__inter_chain {
+  @apply border-l-blue-500;
+}
+
+.progress__bar {
+  @apply shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center;
+}
+
+.progress__bar__yes {
+  @apply bg-emerald-500;
+}
+
+.progress__bar__no {
+  @apply bg-red-500;
+}
+
+.progress__bar__abstain {
+  @apply bg-gray-500;
+}
+
+.overflow__hidden__true {
+  @apply overflow-hidden;
+}
+
+.missed {
+  @apply bg-red-300  ring-red-200;
+}
+
+.signed {
+  @apply bg-green-600 ring-emerald-300;
+}
+
+.signed-line {
+  stroke: #84c3bb;
+}
+
+.missed-line {
+  stroke: #ff6241;
+}
+
+.hide {
+  @apply hidden;
+}
+
+.show {
+  @apply block;
+}

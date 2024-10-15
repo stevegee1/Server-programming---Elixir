@@ -1,0 +1,24 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"]
+
+ :dependencies
+ [[cljs-ajax "0.8.4"]
+  [reagent "1.1.1"]
+  [hickory "0.7.1"]]
+
+ :dev-http {9080 "../priv/static"}
+
+ :builds
+ {:app {:output-dir "../priv/static/js"
+        :asset-path "/js",
+        :target :browser
+        :modules {:app {:init-fn app.main/init!}}
+        :devtools {:before-load app.main/stop!
+                   :after-load app.main/reload!}
+        :build-hooks [(shadow.cljs.build-report/hook
+                       {:output-to "tmp/report.html"})]}
+  :test {:target :karma
+         :output-to "../priv/static/test.js"
+         :ns-regexp "-test$"
+         :autorun true}}}

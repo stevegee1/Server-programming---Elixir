@@ -1,0 +1,7 @@
+.nav__link__active__true {
+  @apply bg-gray-100 text-gray-900;
+}
+
+.nav__link__active__false {
+  @apply text-gray-900 hover:bg-gray-50 hover:text-gray-900;
+}

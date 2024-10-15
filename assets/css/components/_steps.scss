@@ -1,0 +1,11 @@
+.steps__success {
+  @apply bg-green-500;
+}
+
+.steps__failed {
+  @apply bg-red-500;
+}
+
+.steps__pending {
+  @apply bg-blue-400 ring-4 ring-blue-100;
+}

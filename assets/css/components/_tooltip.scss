@@ -1,0 +1,15 @@
+.tooltip__top {
+  @apply relative duration-300 cursor-pointer flex items-center;
+
+  .text {
+    @apply justify-center absolute hidden left-1/2 -translate-x-1/2 -top-2 -translate-y-full w-48 px-2 py-2 bg-slate-600 rounded-lg text-center text-white text-sm after:content-[''] after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2 after:border-8 after:border-x-transparent after:border-b-transparent after:border-t-slate-600;
+  }
+}
+
+.tooltip__right {
+  @apply relative inline-block duration-300 cursor-pointer flex items-center;
+
+  .text {
+    @apply justify-center absolute hidden -top-1/2 -right-3 translate-x-full w-48 px-2 py-2 bg-slate-600 rounded-lg text-center text-white text-sm before:content-[''] before:absolute before:top-1/2  before:right-[100%] before:-translate-y-1/2 before:border-8 before:border-y-transparent before:border-l-transparent before:border-r-slate-600;
+  }
+}
