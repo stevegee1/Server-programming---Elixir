@@ -16,7 +16,7 @@ updates:
    
    # testing
   - package-ecosystem: "npm" 
-    directory: "/testing/" 
+    directory: "/Users/mac/server_programming_elixir/smoke_test/server_programming_elixir/testing" 
     schedule:
       interval: "weekly" 
     open-pull-requests-limit: 10 
